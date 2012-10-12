@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!-- FUll list of all the api table calls
+Do no place commas in the parameter list in any where other than a sepeartion between the parametes-->
+<OpenSHPE>
+	<context>
+		<common>
+			<item>
+				<name>Country Service</name>
+				<URL Methods="G" Parameters="">/v1/location/countries</URL>
+				<URL Methods="G" Parameters="">/v1/location/country/{id}</URL>
+			</item>
+			<item>
+				<name>State/Province Service</name>
+				<URL Methods="G" Parameters="">/v1/location/country/{id}/provinces</URL>
+			</item>
+			<item>
+				<name>College Service</name>
+				<URL Methods="G" Parameters="country, province, city, includeAddress (true/false), includeAwards (true/false)">/v1/colleges</URL>
+        <URL Methods="G,P,O,D" Parameters="">/v1/colleges/{id}</URL>
+        <URL Methods="G" Parameters="q (Search Term),  includeAddress (true/false), includeAwards (true/false)">/v1/colleges/search</URL>
+			</item>
+      <item>
+        <name>School (k-12) Service</name>
+        <URL Methods="G" Parameters="type (h m e k o), includeAddress (true/false), includeAwards (true/false)">/v1/schools</URL>
+        <URL Methods="G,P,O,D" Parameters="">/v1/school/{id}</URL>
+        <URL Methods="G" Parameters="q (Search Term),  includeAddress (true/false), includeAwards (true/false)">/v1/schools/search</URL>
+      </item>
+      <item>
+        <name>Major/Concentration Service</name>
+        <URL Methods="G" Parameters="">/v1/education/majors</URL>
+        <URL Methods="G" Parameters="">/v1/education/major/{id}</URL>
+      </item>
+      <item>
+        <name>Degree Service</name>
+        <URL Methods="G" Parameters="">/v1/education/degrees</URL>
+        <URL Methods="G" Parameters="">/v1/education/degrees/{id}</URL>
+      </item>
+      <item>
+        <name>Company Service</name>
+        <URL Methods="G" Parameters="includeAddress (true/false)">/v1/companies</URL>
+        <URL Methods="G,P,O,D" Parameters="">/v1/company/{id}</URL>
+        <URL Methods="G" Parameters="q (Search Term), includeAddress (true/false)">/v1/companies/search</URL>
+      </item>
+      <item>
+        <name>Job Function Service</name>
+        <URL Methods="G" Parameters="">/v1/employment/jobfunctions</URL>
+        <URL Methods="G" Parameters="">/v1/employment/jobfunction/{id}</URL>
+      </item>
+      <item>
+        <name>Job Industry Service</name>
+        <URL Methods="G" Parameters="">/v1/employment/jobindustries</URL>
+        <URL Methods="G" Parameters="">/v1/employment/jobindustry/{id}</URL>
+      </item>
+      <item>
+        <name>Job Level</name>
+        <URL Methods="G" Parameters="">/v1/employment/joblevels</URL>
+        <URL Methods="G" Parameters="">/v1/employment/joblevels/{id}</URL>
+      </item>
+		</common>
+		<org>
+		</org>
+		<profiles>
+		</profiles>
+		<membership>
+		</membership>
+	</context>
+</OpenSHPE>
